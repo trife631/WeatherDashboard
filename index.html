@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header class="bg-primary text-white py-4">
+    <div class="container">
+        <h1 class="mb-0">Weather Dashboard</h1>
+    </div>
+</header>
+<main class="py-4">
+    <div class="container">
+        <div class="row">
+            <!-- content here -->
+        </div> <!-- add this closing div tag -->
+        </div>
+            <div class="col-lg-4 mb-4">
+                <form id="search-form">
+                    <div class="form-group">
+                        <label for="search-city" class="font-weight-bold">Search for a City</label>
+                        <input type="text" class="form-control" id="search-city" placeholder="Enter city">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+            </div>
+            <section class="mb-4"id="daily-weather">
+                <div>
+                <h2>Current Weather</h2>
+                <div id="current-weather" class="d-flex align-items-center">
+                    <div>
+                        <img id="weather-icon" src="" alt="">
+                    </div>
+                    <div>
+                        <p id="temperature" class="display-1 font-weight-bold mr-3">-- °F</p>
+                        <p id="description" class="mb-0 h2">--</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="history"></div>
+            </div>
+            </section>
+            <section>
+                <h2>5-Day Forecast</h2>
+                <ul id="forecast" class="list-unstyled d-flex justify-content-between flex-wrap">
+                    <li class="bg-light p-4 mb-4 rounded">
+                        <p class="day mb-0 font-weight-bold" id="day1">--</p>
+                        <p class="temp mb-0 h2" id="temp1">-- °F</p>
+                        <p class="humidity mb-0 h5" id="humidity1">Humidity: --%</p> 
+                        <p class="humidity mb-0 h5" id="windspeed1">Windspeed: --%</p> 
+                        <img id="icon1" src="" />
+                    </li>
+                    <li class="bg-light p-4 mb-4 rounded">
+                        <p class="day mb-0 font-weight-bold" id="day2">--</p>
+                        <p class="temp mb-0 h2" id="temp2">-- °F</p>
+                        <p class="humidity mb-0 h5" id="humidity2">Humidity: --%</p>
+                        <p class="humidity mb-0 h5" id="windspeed2">Windspeed: --%</p> 
+                        <img id="icon2" src="" />
+                    </li>
+                    <li class="bg-light p-4 mb-4 rounded">
+                        <p class="day mb-0 font-weight-bold" id="day3">--</p>
+                        <p class="temp mb-0 h2" id="temp3">-- °F</p>
+                        <p class="humidity mb-0 h5" id="humidity3">Humidity: --%</p>
+                        <p class="humidity mb-0 h5" id="windspeed3">Windspeed: --%</p> 
+                        <img id="icon3" src="" />
+                    </li>
+                    <li class="bg-light p-4 mb-4 rounded">
+                        <p class="day mb-0 font-weight-bold" id="day4">--</p>
+                        <p class="temp mb-0 h2" id="temp4">-- °F</p>
+                        <p class="humidity mb-0 h5" id="humidity4">Humidity: --%</p>
+                        <p class="humidity mb-0 h5" id="windspeed4">Windspeed: --%</p> 
+                        <img id="icon4" src="" />
+                    </li>
+                    <li class="bg-light p-4 mb-4 rounded">
+                        <p class="day mb-0 font-weight-bold" id="day5">--</p>
+                        <p class="temp mb-0 h2" id="temp5">-- °F</p>
+                        <p class="humidity mb-0 h5" id="humidity5">Humidity: --%</p>
+                        <p class="humidity mb-0 h5" id="windspeed5">Windspeed: --%</p> 
+                        <img id="icon5" src="" />
+                    </li>
+                </ul>
+            </section>
+        </div> <!-- add this closing div tag -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</main>
+</html>
